@@ -1,0 +1,890 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>全平台赚钱实操手册 · 23 种收益渠道全拆解</title>
+<meta name="description" content="基于真实收益截图的 23 种赚钱方式实操教程：矩阵挂机、内容创作、电商拉新，含手把手步骤、7 天启动路线、避坑指南与常见问题。">
+<style>
+:root{
+  --bg:#0a0e0d; --bg2:#0f1512; --card:#131b17; --card2:#182119;
+  --line:rgba(255,255,255,.08); --line2:rgba(255,255,255,.14);
+  --tx:#e9efe9; --tx2:#a8b5aa; --tx3:#6f7d72;
+  --gold:#f5b940; --gold2:#ffd97a; --em:#34d399; --em2:#6ee7b7;
+  --red:#f87171; --blue:#7dd3fc; --violet:#c4b5fd;
+  --grad:linear-gradient(135deg,#f5b940 0%,#34d399 100%);
+  --radius:18px; --maxw:1120px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font-family:"PingFang SC","Noto Sans SC","Microsoft YaHei",-apple-system,sans-serif;line-height:1.75;overflow-x:hidden}
+::selection{background:rgba(245,185,64,.3)}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+
+/* progress bar */
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--grad);z-index:99;transition:width .1s}
+
+/* ===== nav ===== */
+nav{position:fixed;top:0;left:0;right:0;z-index:90;backdrop-filter:blur(14px);background:rgba(10,14,13,.78);border-bottom:1px solid var(--line)}
+.nav-in{max-width:var(--maxw);margin:0 auto;padding:0 22px;height:60px;display:flex;align-items:center;gap:18px}
+.logo{font-weight:800;font-size:17px;letter-spacing:.5px;display:flex;align-items:center;gap:8px;white-space:nowrap}
+.logo .coin{width:26px;height:26px;border-radius:50%;background:var(--grad);display:grid;place-items:center;font-size:14px;color:#0a0e0d;font-weight:900}
+.nav-links{display:flex;gap:4px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links a{padding:7px 12px;border-radius:10px;font-size:13.5px;color:var(--tx2);white-space:nowrap;transition:.2s}
+.nav-links a:hover{color:var(--tx);background:rgba(255,255,255,.06)}
+
+/* ===== hero ===== */
+.hero{position:relative;padding:132px 0 72px;text-align:center;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(600px 300px at 20% 0%,rgba(245,185,64,.13),transparent 60%),
+  radial-gradient(700px 340px at 85% 15%,rgba(52,211,153,.12),transparent 60%);pointer-events:none}
+.badge{display:inline-flex;align-items:center;gap:8px;padding:7px 16px;border:1px solid var(--line2);border-radius:99px;font-size:13px;color:var(--tx2);background:rgba(255,255,255,.04)}
+.badge .dot{width:7px;height:7px;border-radius:50%;background:var(--em);box-shadow:0 0 10px var(--em);animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.4}}
+.hero h1{margin:26px 0 8px;font-size:clamp(34px,6vw,60px);font-weight:900;letter-spacing:1px;line-height:1.25}
+.hero h1 .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .sub{max-width:640px;margin:14px auto 0;color:var(--tx2);font-size:16px}
+.hero .coinline{margin-top:10px;font-size:13.5px;color:var(--tx3)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;max-width:880px;margin:44px auto 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px 12px;position:relative;overflow:hidden;transition:transform .25s,border-color .25s}
+.stat:hover{transform:translateY(-4px);border-color:rgba(245,185,64,.35)}
+.stat b{display:block;font-size:clamp(24px,3.4vw,36px);font-weight:900;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{font-size:13px;color:var(--tx2)}
+.stat i{position:absolute;right:-6px;bottom:-10px;font-style:normal;font-size:44px;opacity:.06}
+.conclusion{max-width:880px;margin:26px auto 0;background:linear-gradient(135deg,rgba(245,185,64,.1),rgba(52,211,153,.08));border:1px solid rgba(245,185,64,.25);border-radius:var(--radius);padding:22px 26px;text-align:left}
+.conclusion b{color:var(--gold2)}
+.conclusion .flow{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.flow .f{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:10px;padding:6px 14px;font-size:13.5px}
+.flow .plus{align-self:center;color:var(--gold);font-weight:800}
+
+/* ===== sections ===== */
+section{padding:64px 0}
+.sec-head{margin-bottom:34px}
+.kicker{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:2px;color:var(--em2);font-weight:700;text-transform:uppercase}
+.kicker::before{content:"";width:26px;height:2px;background:var(--grad);border-radius:2px}
+.sec-head h2{font-size:clamp(26px,4vw,38px);font-weight:900;margin-top:10px;letter-spacing:.5px}
+.sec-head p{color:var(--tx2);margin-top:8px;max-width:760px}
+.hl{color:var(--gold2);font-weight:700}
+.hle{color:var(--em2);font-weight:700}
+
+/* logic strip */
+.logic{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-bottom:34px}
+.lg{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+.lg .n{width:34px;height:34px;border-radius:10px;background:rgba(52,211,153,.14);color:var(--em2);display:grid;place-items:center;font-weight:800;margin-bottom:12px}
+.lg h4{font-size:15.5px;margin-bottom:4px}
+.lg p{font-size:13.5px;color:var(--tx2)}
+
+/* ===== table ===== */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 16px}
+.tab{padding:8px 16px;border-radius:99px;border:1px solid var(--line2);background:transparent;color:var(--tx2);font-size:13.5px;cursor:pointer;transition:.2s;font-family:inherit}
+.tab.on{background:var(--grad);color:#0a0e0d;border-color:transparent;font-weight:700}
+.tablebox{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.tablescroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:640px}
+thead th{padding:14px 18px;text-align:left;font-size:12.5px;letter-spacing:1px;color:var(--tx3);border-bottom:1px solid var(--line2);background:rgba(255,255,255,.02);white-space:nowrap}
+tbody td{padding:13px 18px;border-bottom:1px solid var(--line)}
+tbody tr:last-child td{border-bottom:none}
+tbody tr{transition:background .15s}
+tbody tr:hover{background:rgba(255,255,255,.03)}
+td.inc{font-weight:800;color:var(--gold2);white-space:nowrap;font-variant-numeric:tabular-nums}
+td.rk{color:var(--tx3);font-variant-numeric:tabular-nums}
+.chip{display:inline-block;padding:3px 10px;border-radius:99px;font-size:12px;white-space:nowrap}
+.chip.ok{background:rgba(52,211,153,.14);color:var(--em2)}
+.chip.warn{background:rgba(245,185,64,.14);color:var(--gold2)}
+.tname{display:flex;align-items:center;gap:10px;font-weight:600}
+.ticon{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;font-size:15px;flex:none;background:rgba(255,255,255,.06)}
+.tcat{font-size:12px;color:var(--tx3)}
+.bar{height:5px;border-radius:5px;background:rgba(255,255,255,.07);overflow:hidden;min-width:90px}
+.bar i{display:block;height:100%;background:var(--grad);border-radius:5px}
+
+/* ===== method cards ===== */
+.group{margin-top:38px}
+.group-head{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.group-head .gn{width:44px;height:44px;flex:none;border-radius:14px;background:var(--grad);color:#0a0e0d;display:grid;place-items:center;font-weight:900;font-size:19px}
+.group-head h3{font-size:21px;font-weight:800}
+.group-head p{font-size:13px;color:var(--tx3)}
+.cards{display:grid;grid-template-columns:1fr;gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:border-color .25s,transform .25s}
+.card:hover{border-color:var(--line2);transform:translateY(-2px)}
+.card-top{display:flex;align-items:flex-start;gap:16px;padding:24px 26px 18px;flex-wrap:wrap}
+.card-ic{width:52px;height:52px;flex:none;border-radius:15px;display:grid;place-items:center;font-size:26px;background:rgba(255,255,255,.06);border:1px solid var(--line)}
+.card-top h4{font-size:20px;font-weight:800;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.card-top .meta{font-size:13.5px;color:var(--tx2);margin-top:3px}
+.income{margin-left:auto;text-align:right}
+.income b{display:block;font-size:26px;font-weight:900;color:var(--gold2);font-variant-numeric:tabular-nums}
+.income span{font-size:12px;color:var(--tx3)}
+.card-body{padding:0 26px 26px}
+.feat{font-size:15px;color:var(--tx);background:rgba(52,211,153,.07);border-left:3px solid var(--em);padding:12px 16px;border-radius:0 12px 12px 0;margin-bottom:20px}
+.steps{counter-reset:st;display:grid;gap:10px}
+.step{position:relative;padding:13px 16px 13px 54px;background:var(--card2);border:1px solid var(--line);border-radius:14px;font-size:14.5px;color:var(--tx)}
+.step::before{counter-increment:st;content:counter(st);position:absolute;left:14px;top:50%;transform:translateY(-50%);width:28px;height:28px;border-radius:9px;background:rgba(245,185,64,.15);color:var(--gold2);display:grid;place-items:center;font-weight:800;font-size:13.5px}
+.step b{color:var(--gold2)}
+.tips{margin-top:18px;padding:16px 18px;background:rgba(125,211,252,.06);border:1px solid rgba(125,211,252,.18);border-radius:14px}
+.tips h5{font-size:13px;letter-spacing:1px;color:var(--blue);margin-bottom:8px}
+.tips ul{list-style:none;display:grid;gap:6px}
+.tips li{font-size:13.5px;color:var(--tx2);padding-left:18px;position:relative}
+.tips li::before{content:"◆";position:absolute;left:0;color:var(--blue);font-size:10px;top:5px}
+.acct{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
+.acct span{font-size:12.5px;padding:5px 12px;border-radius:99px;background:rgba(255,255,255,.05);border:1px solid var(--line);color:var(--tx2)}
+.acct span b{color:var(--em2);font-weight:600}
+.note{margin-top:14px;font-size:13.5px;color:var(--tx2);background:rgba(248,113,113,.07);border:1px solid rgba(248,113,113,.2);border-radius:14px;padding:13px 16px}
+.note b{color:var(--red)}
+
+/* priority table */
+.prio td:first-child{white-space:nowrap;font-size:15px;letter-spacing:2px;color:var(--gold2)}
+.prio .sug{color:var(--tx2);font-size:13.5px}
+
+/* roadmap */
+.road{display:grid;gap:14px;position:relative;padding-left:0}
+.road-item{display:grid;grid-template-columns:92px 1fr;gap:18px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;transition:border-color .2s}
+.road-item:hover{border-color:rgba(52,211,153,.35)}
+.road-item .day{font-weight:900;color:var(--em2);font-size:15px}
+.road-item .day small{display:block;font-weight:400;color:var(--tx3);font-size:12px;margin-top:2px}
+.road-item h4{font-size:16px;margin-bottom:6px}
+.road-item p{font-size:14px;color:var(--tx2)}
+
+/* tools */
+.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.tool{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+.tool .ti{font-size:26px;margin-bottom:10px}
+.tool h4{font-size:15.5px;margin-bottom:6px}
+.tool p{font-size:13.5px;color:var(--tx2)}
+.tool .tag{display:inline-block;margin-top:10px;font-size:11.5px;padding:3px 10px;border-radius:99px;background:rgba(196,181,253,.12);color:var(--violet)}
+
+/* risk */
+.risks{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.risk{background:var(--card);border:1px solid rgba(248,113,113,.22);border-radius:var(--radius);padding:20px 22px}
+.risk h4{font-size:15.5px;display:flex;gap:10px;align-items:center;margin-bottom:8px}
+.risk h4 .ri{width:28px;height:28px;flex:none;border-radius:9px;background:rgba(248,113,113,.14);color:var(--red);display:grid;place-items:center;font-size:14px}
+.risk p{font-size:13.5px;color:var(--tx2)}
+.risk p b{color:var(--red)}
+
+/* faq */
+.faq{display:grid;gap:12px}
+.q{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.q button{width:100%;text-align:left;background:none;border:none;color:var(--tx);font-size:15.5px;font-weight:600;font-family:inherit;padding:18px 22px;display:flex;justify-content:space-between;align-items:center;gap:14px;cursor:pointer}
+.q button .ar{transition:.25s;color:var(--gold2);flex:none}
+.q.open button .ar{transform:rotate(45deg)}
+.q .a{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.q .a-in{padding:0 22px 20px;font-size:14px;color:var(--tx2)}
+
+footer{border-top:1px solid var(--line);padding:36px 0 46px;text-align:center;color:var(--tx3);font-size:13px}
+footer .warn{color:var(--tx2);max-width:640px;margin:0 auto 10px}
+
+#top-btn{position:fixed;right:22px;bottom:24px;width:46px;height:46px;border-radius:50%;border:1px solid var(--line2);background:rgba(19,27,23,.9);color:var(--gold2);font-size:19px;cursor:pointer;opacity:0;pointer-events:none;transition:.3s;z-index:80;backdrop-filter:blur(8px)}
+#top-btn.show{opacity:1;pointer-events:auto}
+
+@media(max-width:760px){
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .nav-links a{padding:6px 9px;font-size:12.5px}
+  .hero{padding-top:104px}
+  .income{margin-left:0;text-align:left;width:100%}
+  .road-item{grid-template-columns:1fr;gap:6px}
+}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+
+<nav>
+  <div class="nav-in">
+    <a class="logo" href="#top"><span class="coin">¥</span>赚钱实操手册</a>
+    <div class="nav-links">
+      <a href="#overview">数据全景</a>
+      <a href="#cat1">挂机看赚</a>
+      <a href="#cat2">内容创作</a>
+      <a href="#cat3">电商拉新</a>
+      <a href="#priority">优先级</a>
+      <a href="#roadmap">7天路线</a>
+      <a href="#tools">工具清单</a>
+      <a href="#risk">避坑</a>
+      <a href="#faq">FAQ</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="badge"><span class="dot"></span>2026 年 10 月更新 · 23 种方法全拆解</span>
+    <h1>全平台赚钱方式<br><span class="g">实操手册</span></h1>
+    <p class="sub">基于一份真实收益截图的 23 种收益渠道，逐个拆解可行性 + 手把手操作步骤。从矩阵挂机到内容创作，从无货源电商到 CPA 拉新。</p>
+    <p class="coinline">数据样本：单日收益 ¥507.62 / 455 万金币 / 23 个渠道并行</p>
+    <div class="stats">
+      <div class="stat"><b data-count="507.62" data-prefix="¥" data-dec="2">0</b><span>今日总收益</span><i>💰</i></div>
+      <div class="stat"><b data-count="294.18" data-prefix="¥" data-dec="2">0</b><span>昨日总收益</span><i>📈</i></div>
+      <div class="stat"><b data-count="455" data-suffix="万">0</b><span>今日金币总量</span><i>🪙</i></div>
+      <div class="stat"><b data-count="23">0</b><span>收益渠道数</span><i>📡</i></div>
+    </div>
+    <div class="conclusion">
+      <b>核心结论：</b>这套玩法的本质是 <b>「矩阵挂机赚金币 + 内容创作变现 + 电商 / 拉新」</b> 三层组合。看赚类 APP 占了数量但单个钱少，真正的大钱来自<span class="hl">伙伴计划（¥69）</span>、<span class="hl">汽水音乐（¥70）</span>、<span class="hl">公众号（¥45）</span>、<span class="hl">CPA 拉新（¥36）</span>和<span class="hl">闲鱼（¥31）</span>。
+      <div class="flow">
+        <span class="f">🪙 矩阵挂机赚金币</span><span class="plus">+</span>
+        <span class="f">✍️ 内容创作变现</span><span class="plus">+</span>
+        <span class="f">🛒 电商 / 拉新</span><span class="plus">=</span>
+        <span class="f" style="border-color:rgba(245,185,64,.5);color:var(--gold2)">¥500+/天 组合收益</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ============ 数据全景 ============ -->
+<section id="overview">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Overview</span>
+      <h2>23 个渠道数据全景</h2>
+      <p>按单日收益排序。点上方标签可按类型筛选：<span class="hl">挂机看赚</span>（18 个，合计约 ¥140/天）、<span class="hl">内容创作</span>、<span class="hl">电商 &amp; 拉新</span>。</p>
+    </div>
+    <div class="tabs" id="tabs">
+      <button class="tab on" data-f="all">全部 23 个</button>
+      <button class="tab" data-f="auto">挂机看赚 · 18</button>
+      <button class="tab" data-f="content">内容创作 · 3</button>
+      <button class="tab" data-f="biz">电商拉新 · 2</button>
+    </div>
+    <div class="tablebox">
+      <div class="tablescroll">
+        <table>
+          <thead><tr><th>#</th><th>APP / 渠道</th><th>今日收益</th><th>占比</th><th>类型</th><th>可行性</th></tr></thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 第一类 ============ -->
+<section id="cat1" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Category 01</span>
+      <h2>第一类：看赚类 APP（挂机刷金币）</h2>
+      <p>18 个 APP 合计约 <span class="hl">¥140/天</span>。数量占绝大多数，单个收益不高——秘诀是<span class="hle">全部下载同时挂着，能自动播放的让它后台播</span>，每天只花 15 分钟统一签到。</p>
+    </div>
+
+    <div class="logic">
+      <div class="lg"><div class="n">1</div><h4>你看内容</h4><p>刷视频 / 听歌 / 看剧 / 读小说</p></div>
+      <div class="lg"><div class="n">2</div><h4>APP 展示广告</h4><p>金币奖励来自广告位收入</p></div>
+      <div class="lg"><div class="n">3</div><h4>广告主付钱给平台</h4><p>平台按任务结算金币</p></div>
+      <div class="lg"><div class="n">4</div><h4>平台分你一部分</h4><p>每天凌晨金币自动兑换现金，攒到门槛提现</p></div>
+    </div>
+
+    <div class="cards">
+      <!-- 汽水音乐 -->
+      <div class="card">
+        <div class="card-top">
+          <div class="card-ic">🎵</div>
+          <div><h4>汽水音乐 <span class="chip ok">✅ 完全可跑通</span></h4><div class="meta">字节旗下 · 看赚类里收益最高的单个 APP</div></div>
+          <div class="income"><b>¥70.63</b><span>每天</span></div>
+        </div>
+        <div class="card-body">
+          <p class="feat">听歌自动涨金币。单日 312 万金币 ≈ 70 元，后台挂着就行，锁屏也在涨。</p>
+          <div class="steps">
+            <div class="step">应用商店搜索<b>「汽水音乐」</b>下载安装，用抖音账号一键登录最快</div>
+            <div class="step">打开 APP 随便点一首歌播放——<b>金币自动到账</b>，不用做任何事</div>
+            <div class="step">点右下角<b>「福利」</b>入口 → 每日签到、翻卡、看广告视频（大额金币，优先做完）</div>
+            <div class="step">挂后台继续播放，歌单循环不用手动切歌</div>
+            <div class="step">提现：福利页 → <b>「去提现」</b>→ 选金额（新人 0.3 元无门槛）→ 绑支付宝/微信 → 确认</div>
+          </div>
+          <div class="tips"><h5>关键技巧</h5><ul>
+            <li>激励视频广告是大额金币来源，每天把能看的广告全看完</li>
+            <li>金币每天自动兑换现金，不需要手动操作</li>
+            <li>手机充电时挂机最划算，边际成本几乎为零</li>
+          </ul></div>
+          <div class="acct"><span>账号：<b>抖音账号一键登录</b></span><span>提现：<b>支付宝 / 微信</b></span></div>
+        </div>
+      </div>
+
+      <!-- 快手极速版 -->
+      <div class="card">
+        <div class="card-top">
+          <div class="card-ic">🎬</div>
+          <div><h4>快手极速版 <span class="chip ok">✅ 可跑通</span></h4><div class="meta">看赚类里第二高，看视频必做</div></div>
+          <div class="income"><b>¥19.73</b><span>每天</span></div>
+        </div>
+        <div class="card-body">
+          <div class="steps">
+            <div class="step">应用商店下载「快手极速版」，手机号或微信登录</div>
+            <div class="step">点左上角<b>三条杠菜单</b> → 点<b>「去赚钱」</b>（或直接点屏幕中间转圈的红包图标）</div>
+            <div class="step">在「去赚钱」页面做任务：签到、看视频、开宝箱、走路赚金币、吃饭打卡</div>
+            <div class="step">回首页刷视频，中间红包圈转满一圈就给一波金币</div>
+            <div class="step">提现：左上角菜单 → <b>「现金收益」→「去提现」</b>→ 选金额 → 微信/支付宝 → 立即提现</div>
+          </div>
+          <div class="tips"><h5>关键技巧</h5><ul>
+            <li>每天看满 45 分钟视频必得 9999 金币（任务页有提示）</li>
+            <li>宝箱每 20 分钟开一次，看完广告视频金币翻倍</li>
+            <li>邀请好友奖励最大（一个好友几块到十几块），有条件就拉人</li>
+          </ul></div>
+          <div class="acct"><span>账号：<b>手机号注册</b></span><span>提现：<b>微信 / 支付宝</b></span></div>
+        </div>
+      </div>
+
+      <!-- 喜番 -->
+      <div class="card">
+        <div class="card-top">
+          <div class="card-ic">📺</div>
+          <div><h4>喜番免费短剧 <span class="chip ok">✅ 可跑通</span></h4><div class="meta">快手旗下 · 收益仅次于两大头部</div></div>
+          <div class="income"><b>¥11.45</b><span>每天</span></div>
+        </div>
+        <div class="card-body">
+          <div class="steps">
+            <div class="step">下载「喜番免费短剧」，用<b>快手账号</b>登录（重要！提现走快手账户）</div>
+            <div class="step">点任意短剧播放，看剧自动积累金币</div>
+            <div class="step">底部「我的」→ 每日签到、连续看 3 集、分享剧集等任务额外领红包</div>
+            <div class="step">金币自动兑换现金，提现到绑定的快手钱包</div>
+          </div>
+          <div class="note"><b>风险提示：</b>App Store 评论显示喜番后期提现要求拍身份证正反面 + 人脸识别，且有用户遇到「被其他人绑定」无法提现的问题。<b>建议只用小号试，不要用主身份证信息。</b></div>
+          <div class="acct"><span>账号：<b>快手账号</b></span><span>提现：<b>快手钱包</b></span></div>
+        </div>
+      </div>
+
+      <!-- 红果 -->
+      <div class="card">
+        <div class="card-top">
+          <div class="card-ic">🍿</div>
+          <div><h4>红果免费短剧 <span class="chip ok">✅ 可跑通</span></h4><div class="meta">看剧自动涨金币</div></div>
+          <div class="income"><b>¥6.98</b><span>每天</span></div>
+        </div>
+        <div class="card-body">
+          <div class="steps">
+            <div class="step">下载「红果免费短剧」，用抖音账号或手机号登录</div>
+            <div class="step">随便点一部短剧播放——<b>看剧自动涨金币</b></div>
+            <div class="step">底部「我的」→ 可查看金币余额和现金收益</div>
+            <div class="step">凌晨 1 点系统自动把前日金币折算成现金</div>
+            <div class="step">提现：「我的」→「我的钱包」→「去提现」→ 支付宝/微信 → 选金额提交（新人 0.3 元无门槛）</div>
+          </div>
+          <div class="tips"><h5>门槛注意</h5><ul>
+            <li>新人 0.3 元随便提，之后通常要攒到 15 元或 30 元才能提</li>
+            <li>33000 金币 ≈ 1 元，看一天剧大概攒几千到一万金币</li>
+          </ul></div>
+          <div class="acct"><span>账号：<b>抖音账号</b></span><span>提现：<b>支付宝 / 微信</b>（需实名）</span></div>
+        </div>
+      </div>
+
+      <!-- 抖音极速版 -->
+      <div class="card">
+        <div class="card-top">
+          <div class="card-ic">⚡</div>
+          <div><h4>抖音极速版 <span class="chip ok">✅ 可跑通</span></h4><div class="meta">金币每天 0 点自动兑换（10000 金币 = 1 元）</div></div>
+          <div class="income"><b>¥6.82</b><span>每天</span></div>
+        </div>
+        <div class="card-body">
+          <div class="steps">
+            <div class="step">下载「抖音极速版」，用抖音账号或手机号登录</div>
+            <div class="step">首页刷视频，红包圈转一圈给一波金币</div>
+            <div class="step">点中间<b>「来赚钱」</b>（红包图标）→ 签到、开宝箱（每小时一次）、看广告、吃饭打卡、睡觉打卡</div>
+            <div class="step">金币每天 0 点自动兑换现金</div>
+            <div class="step">提现：红包图标 →「现金收益」→「去提现」→ 选金额 → 支付宝</div>
+          </div>
+          <div class="tips"><h5>关键技巧</h5><ul>
+            <li>连续签到 6 天有额外奖励</li>
+            <li>连续看视频 30 天打卡活动能多拿 30 元</li>
+          </ul></div>
+          <div class="acct"><span>账号：<b>抖音账号</b></span><span>提现：<b>支付宝</b></span></div>
+        </div>
+      </div>
+
+      <!-- 番茄三件套 -->
+      <div class="card">
+        <div class="card-top">
+          <div class="card-ic">📚</div>
+          <div><h4>番茄三件套：畅听 / 小说 / 音乐 <span class="chip ok">✅ 可跑通</span></h4><div class="meta">三个 APP 操作逻辑几乎一样</div></div>
+          <div class="income"><b>¥4.67</b><span>合计每天</span></div>
+        </div>
+        <div class="card-body">
+          <div class="steps">
+            <div class="step">分别下载「番茄畅听」「番茄免费小说」「番茄音乐」，抖音账号或手机号登录</div>
+            <div class="step">点底部导航的<b>「领现金」</b>（畅听在底部中间，小说在「我的」页面）</div>
+            <div class="step">新人任务优先做——<b>7 天见面礼奖励最大</b></div>
+            <div class="step">回首页点一本书开始听 / 看，金币进度条自动上涨</div>
+            <div class="step">听满 30 分钟解锁基础奖励，听越久金币越多</div>
+            <div class="step">提现：「领现金」→「提现」→ 微信/支付宝（首次需实名认证）</div>
+          </div>
+          <div class="note"><b>性价比提示：</b>新人 0.3 元 / 1 元门槛很好提，但之后门槛会升到 15 元。每天收益才几毛钱，<b>建议新人红包薅完就当挂着，不要专门花时间。</b></div>
+          <div class="acct"><span>账号：<b>抖音账号</b></span><span>提现：<b>微信 / 支付宝</b></span></div>
+        </div>
+      </div>
+
+      <!-- 悟空浏览器 -->
+      <div class="card">
+        <div class="card-top">
+          <div class="card-ic">🌏</div>
+          <div><h4>悟空浏览器 <span class="chip ok">✅ 门槛极低</span></h4><div class="meta">字节旗下 · 不用绑卡不用实名</div></div>
+          <div class="income"><b>¥0.91</b><span>每天</span></div>
+        </div>
+        <div class="card-body">
+          <div class="steps">
+            <div class="step">下载「悟空浏览器」，手机号登录</div>
+            <div class="step">正常刷资讯、看短剧、看小说——金币自动上涨</div>
+            <div class="step">签到、开宝箱做额外任务</div>
+            <div class="step">提现：满 <b>0.2 元</b>就能提，不用绑卡不用实名</div>
+          </div>
+          <div class="acct"><span>账号：<b>手机号</b></span><span>提现：<b>无需实名绑卡</b></span></div>
+        </div>
+      </div>
+
+      <!-- 批量表 -->
+      <div class="card">
+        <div class="card-top">
+          <div class="card-ic">📦</div>
+          <div><h4>其余看赚类 APP（批量挂着就行）</h4><div class="meta">赚钱逻辑与上面完全相同，统一操作</div></div>
+          <div class="income"><b>¥11.99</b><span>合计每天</span></div>
+        </div>
+        <div class="card-body">
+          <div class="tablebox" style="margin-bottom:16px">
+            <div class="tablescroll">
+              <table style="min-width:520px">
+                <thead><tr><th>APP</th><th>今日收益</th><th>怎么赚</th><th>提现入口</th></tr></thead>
+                <tbody>
+                  <tr><td>抖音</td><td class="inc">¥1.74</td><td>刷视频、看广告</td><td>我 → 右上角三条杠 → 我的钱包</td></tr>
+                  <tr><td>快手</td><td class="inc">¥2.18</td><td>刷视频</td><td>同快手极速版路径</td></tr>
+                  <tr><td>今日头条</td><td class="inc">¥1.02</td><td>看文章 / 视频</td><td>我的 → 钱包</td></tr>
+                  <tr><td>今日头条极速版</td><td class="inc">¥2.04</td><td>看文章 / 视频</td><td>同头条路径</td></tr>
+                  <tr><td>趣头条</td><td class="inc">¥2.39</td><td>看资讯 / 视频</td><td>我的 → 提现</td></tr>
+                  <tr><td>西瓜视频</td><td class="inc">¥0.85</td><td>看视频</td><td>我的 → 钱包</td></tr>
+                  <tr><td>番茄音乐</td><td class="inc">¥1.27</td><td>听歌</td><td>领现金 → 提现</td></tr>
+                  <tr><td>番茄免费小说</td><td class="inc">¥1.36</td><td>看小说</td><td>领现金 → 提现</td></tr>
+                  <tr><td>蛋花免费小说</td><td class="inc">¥0.79</td><td>看小说</td><td>我的 → 钱包提现</td></tr>
+                  <tr><td>红果免费漫剧</td><td class="inc">¥0.67</td><td>看漫剧</td><td>同红果短剧路径</td></tr>
+                  <tr><td>抖音火山版</td><td class="inc">¥0.51</td><td>刷视频</td><td>同抖音极速版路径</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="tips"><h5>批量操作秘诀</h5><ul>
+            <li>全部下载后设置每天闹钟：早上起床打开所有 APP 签到 + 领宝箱</li>
+            <li>然后让它们各自在后台播放，手机充电时把能自动播放的都挂着</li>
+            <li>单日 455 万金币就是这个玩法跑满的结果</li>
+          </ul></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 第二类 ============ -->
+<section id="cat2">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Category 02</span>
+      <h2>第二类：内容创作变现</h2>
+      <p>数量少但<span class="hl">单渠道收益高</span>，而且是能随时间增长的「资产型」收入——播放量、粉丝、搜索流量都会沉淀下来。</p>
+    </div>
+    <div class="cards">
+      <!-- 伙伴计划 -->
+      <div class="card">
+        <div class="card-top">
+          <div class="card-ic">🎥</div>
+          <div><h4>抖音伙伴计划 <span class="chip warn">⚠️ 有门槛</span></h4><div class="meta">创作者播放量分成——发视频有人看就有钱</div></div>
+          <div class="income"><b>¥69.04</b><span>每天</span></div>
+        </div>
+        <div class="card-body">
+          <p class="feat">这是字节给创作者的播放量分成。一天 69 元说明已加入且有一定播放量，是整个组合里<span class="hl">最大的被动收入来源</span>。</p>
+          <div class="tips" style="background:rgba(245,185,64,.07);border-color:rgba(245,185,64,.22)"><h5 style="color:var(--gold2)">加入条件（三个必须同时满足）</h5><ul>
+            <li>抖音账号实名认证，年龄 ≥ 18 周岁</li>
+            <li>互动粉丝数 ≥ 5000（注意是「互动粉丝」不是总粉丝，要有人点赞评论）</li>
+            <li>2022 年起公开作品数 ≥ 20 条</li>
+          </ul></div>
+          <div class="steps" style="margin-top:18px">
+            <div class="step">打开抖音 APP → 点右下角<b>「我」</b></div>
+            <div class="step">点右上角<b>三条杠（≡）</b></div>
+            <div class="step">点<b>「抖音创作者中心」</b></div>
+            <div class="step">点「全部」（工具服务那一行）</div>
+            <div class="step">往下翻找到<b>「变现」</b>区域 → 点<b>「伙伴计划」</b></div>
+            <div class="step">确认条件全部打勾 → 点<b>「加入创作者伙伴计划」</b>→ 同意协议</div>
+            <div class="step">加入后正常发视频就有收益（按内容质量、获利播放、有效互动计算）</div>
+          </div>
+          <div class="tips"><h5>收益怎么算</h5><ul>
+            <li>万次播放大概几块到几十块，取决于内容垂直度和用户价值</li>
+            <li>一天 69 元，按万播 10 元算 ≈ 日均 7 万播放</li>
+            <li>发垂直领域内容最对口（如汽车内容就发汽车）</li>
+            <li>前 3 秒必须抓人，标题带悬念，评论区自己置顶引导互动</li>
+          </ul></div>
+          <div class="acct"><span>账号：<b>抖音主号（实名）</b></span><span>要求：<b>互动粉丝 ≥ 5000</b> · 作品 ≥ 20 条</span></div>
+        </div>
+      </div>
+
+      <!-- 公众号 -->
+      <div class="card">
+        <div class="card-top">
+          <div class="card-ic">💬</div>
+          <div><h4>微信公众号流量主 <span class="chip warn">⚠️ 需粉丝积累</span></h4><div class="meta">长期被动收入，文章写多后搜索流量持续带阅读</div></div>
+          <div class="income"><b>¥45.28</b><span>每天</span></div>
+        </div>
+        <div class="card-body">
+          <p class="feat">收益主要来自<span class="hl">流量主广告</span>——文章底部 / 文中展示广告，有人点你就赚钱。一天 45 元说明已有不错的阅读量。</p>
+          <div class="tips" style="background:rgba(245,185,64,.07);border-color:rgba(245,185,64,.22)"><h5 style="color:var(--gold2)">开通条件</h5><ul>
+            <li>100 粉丝 → 开通「返佣商品」（文中挂商品链接，有人买拿佣金）</li>
+            <li>500 粉丝 → 开通「程序化广告」（文章底部自动展示广告，按点击 / 展示付费）</li>
+            <li>需符合平台运营规范，无刷粉行为</li>
+          </ul></div>
+          <div class="steps" style="margin-top:18px">
+            <div class="step">电脑浏览器打开 <b>mp.weixin.qq.com</b>，微信扫码登录公众号后台</div>
+            <div class="step">左侧菜单「收入变现」→ 点<b>「流量主」</b></div>
+            <div class="step">点「申请开通」→ 同意协议</div>
+            <div class="step">选择广告位（文中广告、文章底部广告、互选广告等）→ 提交</div>
+            <div class="step">在<b>「财务管理」</b>补充收款银行卡信息（不补充影响结算）</div>
+            <div class="step">之后每篇文章发布自动嵌广告，有阅读就有收益</div>
+          </div>
+          <div class="tips"><h5>收益来源拆解</h5><ul>
+            <li><b>流量主广告</b>：文章底部 / 文中广告点击分成（主力）</li>
+            <li><b>返佣商品</b>：文中挂京东 / 当当等商品链接赚佣金</li>
+            <li><b>赞赏</b>：写 3 篇原创后开通，读者自愿打赏</li>
+            <li><b>商单</b>：粉丝多了广告主主动找上门</li>
+            <li>一份内容同步发知乎、头条号、百家号，多处吃流量</li>
+          </ul></div>
+          <div class="acct"><span>账号：<b>个人订阅号即可</b></span><span>收款：<b>绑定银行卡</b></span></div>
+        </div>
+      </div>
+
+      <!-- 小红书 -->
+      <div class="card">
+        <div class="card-top">
+          <div class="card-ic">📕</div>
+          <div><h4>小红书壁纸号 <span class="chip ok">✅ 零成本可批量</span></h4><div class="meta">AI 生成壁纸 → 发笔记引流 → 店铺自动发货</div></div>
+          <div class="income"><b>¥11.36</b><span>每天</span></div>
+        </div>
+        <div class="card-body">
+          <div class="steps">
+            <div class="step">下载小红书 APP，手机号注册新账号</div>
+            <div class="step"><b>养号 3–5 天</b>：每天正常刷笔记，壁纸类内容点赞收藏评论，不要一注册就发广告</div>
+            <div class="step">改资料：头像用壁纸风，昵称改成「XX壁纸馆 / 壁纸分享」之类</div>
+            <div class="step">用 AI 工具生成壁纸（通义万相、即梦 AI、Midjourney），关键词如「手机壁纸 4K 高清 氛围感」，竖屏 9:16</div>
+            <div class="step">每天发 3–5 条图文笔记，标题写「苹果高清壁纸｜自取」「氛围感壁纸分享」，引导私信拿原图</div>
+            <div class="step">开通小红书店铺：我 → 侧边栏 → 创作者中心 → 开店 → 个人店 → 上传壁纸成品为商品</div>
+            <div class="step">定价 <b>3.9–9.9 元/份</b>，设置自动发货（付款后自动发网盘链接或图片）</div>
+            <div class="step">笔记图上加「店铺有售」水印，文案引导去店铺购买</div>
+          </div>
+          <div class="tips"><h5>涨粉技巧</h5><ul>
+            <li>前期先做「免费送」：评论区扣「1」私信发图，把粉丝量做起来</li>
+            <li>粉丝过千后开通「小清单」挂商品赚佣金</li>
+          </ul></div>
+          <div class="acct"><span>账号：<b>手机号注册</b></span><span>开店：<b>需身份证</b></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 第三类 ============ -->
+<section id="cat3" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Category 03</span>
+      <h2>第三类：电商 &amp; 拉新</h2>
+      <p>这一类<span class="hl">天花板最高、也最依赖执行力</span>：闲鱼出单靠选品和上品数量，CPA 拉新靠流量和人脉。</p>
+    </div>
+    <div class="cards">
+      <!-- 闲鱼 -->
+      <div class="card">
+        <div class="card-top">
+          <div class="card-ic">🐟</div>
+          <div><h4>闲鱼无货源卖货 <span class="chip ok">✅ 可跑通</span></h4><div class="meta">不囤货不发货，赚差价</div></div>
+          <div class="income"><b>¥31.27</b><span>每天</span></div>
+        </div>
+        <div class="card-body">
+          <p class="feat">原理：闲鱼挂商品 → 有人下单 → 去<span class="hl">拼多多 / 1688</span> 下单直接发买家 → 赚差价。不需要囤货，不需要自己发货。</p>
+
+          <div class="group-head" style="margin:6px 0 12px"><div class="gn" style="width:34px;height:34px;font-size:15px">1</div><h4 style="font-size:16px">养号</h4></div>
+          <div class="steps">
+            <div class="step">下载闲鱼 APP，用<b>支付宝账号</b>登录（必须实名）</div>
+            <div class="step">每天正常刷闲鱼 10–15 分钟，浏览、点赞、收藏同类商品</div>
+            <div class="step">完善资料：头像、昵称、简介写「自用好物分享」之类</div>
+          </div>
+
+          <div class="group-head" style="margin:18px 0 12px"><div class="gn" style="width:34px;height:34px;font-size:15px">2</div><h4 style="font-size:16px">选品</h4></div>
+          <div class="steps">
+            <div class="step">闲鱼搜索「爆款」「热销」，看同行什么卖得好</div>
+            <div class="step">优先选<b>小件、刚需、低价</b>商品（手机壳、收纳盒、小玩具、家居用品）</div>
+            <div class="step">去拼多多 / 1688 搜同款，确认有货且价格更低</div>
+          </div>
+
+          <div class="group-head" style="margin:18px 0 12px"><div class="gn" style="width:34px;height:34px;font-size:15px">3</div><h4 style="font-size:16px">上架</h4></div>
+          <div class="steps">
+            <div class="step">闲鱼首页底部中间 <b>「+」号</b> →「发闲置」</div>
+            <div class="step">上传商品图（从货源平台下载主图，最好自己截图去重处理）</div>
+            <div class="step">标题 = 核心关键词 + 卖点 + 人群（如「宿舍神器！可折叠脏衣篮 大容量收纳 学生必备」）</div>
+            <div class="step">描述写清功能、尺寸、材质、适用场景</div>
+            <div class="step">定价 = 货源价 + <b>5~20 元利润</b>，参考同行</div>
+            <div class="step">分类选好 → 点「发布」</div>
+          </div>
+
+          <div class="group-head" style="margin:18px 0 12px"><div class="gn" style="width:34px;height:34px;font-size:15px">4</div><h4 style="font-size:16px">出单后发货</h4></div>
+          <div class="steps">
+            <div class="step">买家付款后，去拼多多 / 1688 找同款下单</div>
+            <div class="step">收货地址填<b>买家的地址</b>（姓名、电话、地址全部复制买家）</div>
+            <div class="step">关键：给商家留言<b>「无痕发货，不要放任何卡片和好评返现卡」</b></div>
+            <div class="step">电话技巧：自己的电话填前面，买家电话备注在地址后面，避免拼多多发短信暴露货源</div>
+            <div class="step">商家发货后复制物流单号 → 闲鱼点「发货」→ 粘贴单号</div>
+            <div class="step">买家确认收货后，钱到支付宝账户</div>
+          </div>
+
+          <div class="note"><b>红线提醒：</b>不要在闲鱼聊天里出现「拼多多」「1688」「货源」等字眼，会被平台检测限流。售后退货：直接在拼多多申请退款，让买家把货退到拼多多仓库地址。</div>
+          <div class="acct"><span>账号：<b>支付宝实名（闲鱼必须）</b></span><span>采购：<b>拼多多 / 1688 账号</b></span></div>
+        </div>
+      </div>
+
+      <!-- CPA -->
+      <div class="card">
+        <div class="card-top">
+          <div class="card-ic">📣</div>
+          <div><h4>CPA 拉新 <span class="chip ok">✅ 需流量渠道</span></h4><div class="meta">Cost Per Action：有人通过你的链接完成动作就拿佣金</div></div>
+          <div class="income"><b>¥36.53</b><span>每天</span></div>
+        </div>
+        <div class="card-body">
+          <p class="feat">常见一单 <span class="hl">5–30 元</span>（APP 注册、下载、填表单）。一天 36 元 ≈ 每天带来 3–7 个有效注册。这是列表里<span class="hl">最依赖流量和人脉</span>的方式。</p>
+
+          <div class="group-head" style="margin:6px 0 12px"><div class="gn" style="width:34px;height:34px;font-size:15px">1</div><h4 style="font-size:16px">注册 CPA 平台</h4></div>
+          <div class="steps">
+            <div class="step">注册国内 CPA 拉新平台：造梦开放平台、穿山甲联盟、各 APP 官方推广联盟（抖音 / 快手推广联盟等）</div>
+            <div class="step">填写手机号、推广方式（网推 / 地推）、推广渠道，审核通过后登录后台</div>
+          </div>
+
+          <div class="group-head" style="margin:18px 0 12px"><div class="gn" style="width:34px;height:34px;font-size:15px">2</div><h4 style="font-size:16px">选项目</h4></div>
+          <div class="steps">
+            <div class="step">在后台浏览可推广项目列表</div>
+            <div class="step">选<b>佣金高、操作简单</b>的项目（如某 APP 新用户注册 5 元/人，某 APP 注册 20 元/人）</div>
+            <div class="step">点「申请推广」→ 获取<b>专属推广链接</b>或<b>推广二维码</b></div>
+          </div>
+
+          <div class="group-head" style="margin:18px 0 12px"><div class="gn" style="width:34px;height:34px;font-size:15px">3</div><h4 style="font-size:16px">推广（核心）</h4></div>
+          <div class="steps">
+            <div class="step"><b>地推</b>：商场、地铁口摆摊让人扫码下载，当场送小礼品（矿泉水、小玩具），一单 10–30 元</div>
+            <div class="step"><b>网推</b>：链接发到微信群、朋友圈、抖音评论区、小红书，有人注册就赚钱</div>
+            <div class="step"><b>自媒体引流</b>：发「XX APP 新人福利」「注册领红包」内容，引导点击你的链接</div>
+          </div>
+
+          <div class="group-head" style="margin:18px 0 12px"><div class="gn" style="width:34px;height:34px;font-size:15px">4</div><h4 style="font-size:16px">看数据 &amp; 提现</h4></div>
+          <div class="steps">
+            <div class="step">后台实时展示：带来多少用户、成功几单、赚了多少钱</div>
+            <div class="step">日结 / 周结，满一定金额（通常 100 元）提现到支付宝 / 银行卡</div>
+          </div>
+
+          <div class="tips"><h5>冷启动建议</h5><ul>
+            <li>没有现成微信群 / 抖音流量的话，地推最直接——地铁口一天推 20 单 = 200–400 元</li>
+            <li>有抖音流量就把推广链接挂在视频评论区，被动出单</li>
+          </ul></div>
+          <div class="acct"><span>账号：<b>CPA 平台（手机号注册）</b></span><span>前提：<b>有推广渠道</b></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 优先级 ============ -->
+<section id="priority">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Priority</span>
+      <h2>哪些最值得投入精力</h2>
+      <p>按「日收益 ÷ 投入时间」的性价比排序。原则：<span class="hl">挂机的全保留，资产型的重点做，钱少的不花时间。</span></p>
+    </div>
+    <div class="tablebox">
+      <div class="tablescroll">
+        <table class="prio" style="min-width:680px">
+          <thead><tr><th>优先级</th><th>方式</th><th>日收益</th><th>投入时间</th><th>建议</th></tr></thead>
+          <tbody>
+            <tr><td>⭐⭐⭐⭐⭐</td><td><b>汽水音乐挂机</b></td><td class="inc">¥70</td><td>几乎 0</td><td class="sug">挂着就有钱，必做</td></tr>
+            <tr><td>⭐⭐⭐⭐⭐</td><td><b>抖音伙伴计划</b></td><td class="inc">¥69</td><td>持续创作</td><td class="sug">最大被动收入来源，持续发视频</td></tr>
+            <tr><td>⭐⭐⭐⭐</td><td><b>公众号流量主</b></td><td class="inc">¥45</td><td>每周 2–3 篇</td><td class="sug">长期资产，坚持写</td></tr>
+            <tr><td>⭐⭐⭐⭐</td><td><b>CPA 拉新</b></td><td class="inc">¥37</td><td>看推广量</td><td class="sug">有流量渠道就放大</td></tr>
+            <tr><td>⭐⭐⭐⭐</td><td><b>闲鱼无货源</b></td><td class="inc">¥31</td><td>每天 1 小时</td><td class="sug">选品 + 上架 + 客服，可放大</td></tr>
+            <tr><td>⭐⭐⭐</td><td><b>快手极速版挂机</b></td><td class="inc">¥20</td><td>挂着就行</td><td class="sug">赚得最多的看视频 APP</td></tr>
+            <tr><td>⭐⭐⭐</td><td><b>喜番 / 红果短剧</b></td><td class="inc">¥18</td><td>挂着看剧</td><td class="sug">反正要看剧，顺便赚钱</td></tr>
+            <tr><td>⭐⭐⭐</td><td><b>小红书壁纸号</b></td><td class="inc">¥11</td><td>每天发几条</td><td class="sug">AI 生成壁纸，可批量</td></tr>
+            <tr><td>⭐⭐</td><td><b>其余 15 个看赚 APP</b></td><td class="inc">¥30</td><td>签到 + 挂机</td><td class="sug">全部下载，每天 10 分钟签到就行</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="logic" style="margin-top:26px">
+      <div class="lg"><div class="n">🅰</div><h4>挂机类全部保留</h4><p>18 个看赚 APP 合计一天约 ¥140。每天 15 分钟统一签到 + 领宝箱，充电时全部挂着，边际成本为零。</p></div>
+      <div class="lg"><div class="n">🅱</div><h4>重点经营伙伴计划 + 公众号</h4><p>这两个是真正随时间增长的「资产型」收入。视频发多了播放量涨，文章写多了搜索流量持续带阅读。</p></div>
+      <div class="lg"><div class="n">🅲</div><h4>闲鱼和 CPA 可以放大</h4><p>闲鱼从每天上 5 个品加到 20 个，出单跟着涨；CPA 有抖音流量就把链接挂评论区被动出单。</p></div>
+      <div class="lg"><div class="n">🅳</div><h4>低于 ¥1/天的不花时间</h4><p>比如抖音火山版一天 5 毛——签到领了就放着，不要专门刷。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7天路线 ============ -->
+<section id="roadmap" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Roadmap</span>
+      <h2>新手 7 天启动路线</h2>
+      <p>从零开始把这套组合跑起来的最短路径。每天 1–2 小时，第 7 天形成完整的「挂机 + 创作 + 电商」矩阵雏形。</p>
+    </div>
+    <div class="road">
+      <div class="road-item"><div class="day">Day 1<small>账号地基</small></div><div><h4>注册与实名规划</h4><p>手机号 / 微信 / 抖音 / 快手 / 支付宝实名账号各就位。规划好哪个身份用于主业务，避免所有平台绑同一个信息（参考喜番实名风险）。下载抖音极速版 + 快手极速版先跑起来。</p></div></div>
+      <div class="road-item"><div class="day">Day 2<small>铺开挂机矩阵</small></div><div><h4>批量下载 18 个看赚 APP</h4><p>全部用手机号 / 抖音账号登录，逐个完成新人任务（新人红包是最大的短期收益：7 天见面礼、0.3 元无门槛提现等）。汽水音乐当晚开始挂后台。</p></div></div>
+      <div class="road-item"><div class="day">Day 3<small>打通提现链路</small></div><div><h4>每个 APP 提现一次</h4><p>把能提的最小金额全提一遍，验证支付宝 / 微信 / 快手钱包链路通畅，同时确认各平台实名要求，记录每家的提现门槛（0.2 / 0.3 / 15 / 30 元）。</p></div></div>
+      <div class="road-item"><div class="day">Day 4<small>检查创作资格</small></div><div><h4>伙伴计划 &amp; 公众号</h4><p>查抖音创作者中心的伙伴计划条件差多少（互动粉丝 ≥ 5000、作品 ≥ 20 条）；注册个人订阅号，确定内容领域，开始写第 1 篇。不够格就列涨粉计划。</p></div></div>
+      <div class="road-item"><div class="day">Day 5<small>闲鱼起步</small></div><div><h4>养号 + 首批 10 个品</h4><p>支付宝实名登录闲鱼开始养号；从「爆款」搜索选 10 个小件刚需品，去拼多多 / 1688 比价后全部上架（记得无痕发货话术模板）。</p></div></div>
+      <div class="road-item"><div class="day">Day 6<small>CPA 接入</small></div><div><h4>注册 CPA 平台拿推广位</h4><p>注册造梦开放平台 / 穿山甲联盟等，申请 1–2 个高佣金简单项目，把推广二维码 / 链接准备好。有流量渠道的当天发第一条推广内容。</p></div></div>
+      <div class="road-item"><div class="day">Day 7<small>数据复盘</small></div><div><h4>建收益表，砍掉低效项</h4><p>把 23 个渠道的单日收益填进表格（用本页数据做基准线），算出每项的「时薪」。低于 ¥1/天的只签到；把省下的时间投入伙伴计划和闲鱼上品。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 工具 ============ -->
+<section id="tools">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Toolkit</span>
+      <h2>工具与账号清单</h2>
+      <p>工欲善其事。以下工具覆盖做壁纸、剪视频、选品比价和账号管理的最小集。</p>
+    </div>
+    <div class="tools">
+      <div class="tool"><div class="ti">🎨</div><h4>即梦 AI / 通义万相</h4><p>国产 AI 绘图，免费额度够用，生成小红书壁纸（4K 竖屏 9:16）。</p><span class="tag">小红书壁纸号</span></div>
+      <div class="tool"><div class="ti">🖼️</div><h4>Midjourney</h4><p>效果更好但付费，适合壁纸号做出差异化后再升级。</p><span class="tag">可选进阶</span></div>
+      <div class="tool"><div class="ti">✂️</div><h4>剪映</h4><p>抖音伙伴计划的视频剪辑主力，自动字幕 + 模板，前 3 秒钩子模板多。</p><span class="tag">伙伴计划</span></div>
+      <div class="tool"><div class="ti">🛒</div><h4>拼多多 / 1688</h4><p>无货源采购端。1688 适合批发价拿货，拼多多适合小件低价。</p><span class="tag">闲鱼</span></div>
+      <div class="tool"><div class="ti">📊</div><h4>收益记录表</h4><p>用表格记录 23 个渠道每日收益与提现门槛，第 7 天复盘砍低效项。</p><span class="tag">全渠道</span></div>
+      <div class="tool"><div class="ti">🔋</div><h4>备用机 + 散热支架</h4><p>挂机矩阵的主力设备。旧手机别卖，插电挂机比主力机更稳更省心。</p><span class="tag">挂机矩阵</span></div>
+      <div class="tool"><div class="ti">💳</div><h4>支付宝（实名）</h4><p>绝大多数 APP 的提现终点，也是闲鱼开店的前提，提前实名。</p><span class="tag">全渠道</span></div>
+      <div class="tool"><div class="ti">📝</div><h4>公众号后台</h4><p>mp.weixin.qq.com，100 粉开返佣、500 粉开程序化广告。</p><span class="tag">公众号</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 避坑 ============ -->
+<section id="risk" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Risk Control</span>
+      <h2>避坑与合规指南</h2>
+      <p>这套玩法最大的成本不是时间，是<span class="hl">踩坑</span>。以下 8 条来自真实踩坑反馈。</p>
+    </div>
+    <div class="risks">
+      <div class="risk"><h4><span class="ri">1</span>提现门槛会升级</h4><p>新人 0.3 元随便提，之后普遍升到 <b>15–30 元</b>。低收益 APP（几毛/天）攒到门槛可能要一个月以上——把它们当挂机赠品，不要当主业。</p></div>
+      <div class="risk"><h4><span class="ri">2</span>实名信息是最大资产</h4><p>喜番等 APP 提现要求<b>身份证正反面 + 人脸识别</b>，且有「被其他人绑定」无法提现的反馈。原则：<b>主身份只给大平台，小平台用小号试水。</b></p></div>
+      <div class="risk"><h4><span class="ri">3</span>闲鱼敏感词限流</h4><p>聊天里出现「拼多多」「1688」「货源」会被<b>平台检测限流</b>。发货话术全部用「无痕发货」模板，电话栏按教程倒序填写。</p></div>
+      <div class="risk"><h4><span class="ri">4</span>金币汇率是浮动的</h4><p>大约 10000 金币 ≈ 1 元（红果约 33000 ≈ 1 元），且<b>凌晨自动兑换的比例会波动</b>。所有以 APP 内当日规则为准。</p></div>
+      <div class="risk"><h4><span class="ri">5</span>凡是先交钱的都是诈骗</h4><p>「代刷金币」「付费进赚钱群」「交押金做任务」<b>100% 是骗局</b>。正规平台只会给你钱，不会找你要钱。</p></div>
+      <div class="risk"><h4><span class="ri">6</span>挂机的设备成本</h4><p>18 个 APP 同时挂会<b>发热、耗电、占用前台</b>。用备用机 + 充电器 + 散热支架；主力机只保留收益最高的 3–4 个。</p></div>
+      <div class="risk"><h4><span class="ri">7</span>CPA 避开灰色项目</h4><p>贷款类、赌博引流类佣金高但<b>合规风险极大</b>，可能涉刑。只做正规 APP 注册拉新，签好平台协议。</p></div>
+      <div class="risk"><h4><span class="ri">8</span>规则时效性</h4><p>各平台门槛、汇率、活动经常调整，本手册基于 <b>2026 年 10 月</b>公开规则整理。动手前以 APP 内最新规则复核。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">FAQ</span>
+      <h2>常见问题</h2>
+    </div>
+    <div class="faq">
+      <div class="q"><button>一天真的能赚 500+ 吗？<span class="ar">＋</span></button><div class="a"><div class="a-in">截图数据是「矩阵满配」状态：18 个挂机 APP 同时跑 + 伙伴计划 7 万播放 + 公众号稳定阅读 + 闲鱼和 CPA 出单。新手第一个月的合理预期是 <b>¥50–150/天</b>：先跑通挂机矩阵（约 ¥50–80），再逐步补内容创作和电商。</div></div></div>
+      <div class="q"><button>需要几部手机？<span class="ar">＋</span></button><div class="a"><div class="a-in">一部就能跑通全部流程，只是挂机数量受限。建议：主力机跑高收益 APP（汽水音乐、快手极速版等 3–4 个），旧手机 / 备用机跑长尾 APP。注意每个平台一号一机，避免多开判定。</div></div></div>
+      <div class="q"><button>会被封号吗？<span class="ar">＋</span></button><div class="a"><div class="a-in">看赚类挂机基本不封号（平台本来就是买你的注意力），但注意：喜番这类要实名的小平台有提现纠纷风险；内容平台（抖音 / 小红书 / 公众号）需要养号，一注册就发广告容易被限流。</div></div></div>
+      <div class="q"><button>金币怎么换算成钱？<span class="ar">＋</span></button><div class="a"><div class="a-in">大部分字节系 APP 是 <b>10000 金币 ≈ 1 元</b>（每天 0 点或凌晨 1 点自动兑换），红果约 33000 金币 ≈ 1 元。汇率浮动，以 APP 内「福利 / 钱包」页实时显示为准。</div></div></div>
+      <div class="q"><button>哪一种最适合完全的新手？<span class="ar">＋</span></button><div class="a"><div class="a-in"><b>汽水音乐挂机</b>：0 门槛、0 时间成本、当天就能提现 0.3 元建立信心。然后按 7 天路线图铺开：挂机矩阵 → 提现链路 → 内容资格 → 闲鱼 → CPA。</div></div></div>
+      <div class="q"><button>闲鱼无货源会被买家发现吗？<span class="ar">＋</span></button><div class="a"><div class="a-in">按教程做基本不会：收货信息填买家、要求商家无痕发货（不放卡片）、电话栏备注避免短信暴露。剩余风险在售后——退货直接走拼多多退款，让买家退到拼多多仓库地址。</div></div></div>
+      <div class="q"><button>抖音伙伴计划粉丝不够 5000 怎么办？<span class="ar">＋</span></button><div class="a"><div class="a-in">注意门槛是「互动粉丝」。做法：先发垂直领域内容（20 条作品是硬门槛，先凑够），用评论区置顶引导互动，参加热点话题涨互动率。小红书壁纸号可以同步做，两边互相导流。</div></div></div>
+      <div class="q"><button>这些平台会跑路吗？钱安全吗？<span class="ar">＋</span></button><div class="a"><div class="a-in">头部平台（字节系、快手系、微信）跑路风险极低，但<b>小额提现要勤提</b>——余额控制在门槛附近，不要囤太多金币和现金在平台里。</div></div></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p class="warn">⚠️ 本手册基于 2026 年 10 月各平台公开规则与一份真实收益截图整理，仅供学习参考。提现门槛、金币汇率、活动奖励以各 APP 内最新规则为准。远离任何要求先付费的「赚钱项目」。</p>
+  <p>MONEY PLAYBOOK · 全平台赚钱实操手册 · 23 种方法全拆解</p>
+</footer>
+
+<button id="top-btn" title="回到顶部">↑</button>
+
+<script>
+/* ---- data ---- */
+const APPS=[
+ {n:"汽水音乐",i:"🎵",v:70.63,c:"auto",t:"听歌赚金币",f:1},
+ {n:"抖音伙伴计划",i:"🎥",v:69.04,c:"content",t:"创作者分成",f:2},
+ {n:"公众号",i:"💬",v:45.28,c:"content",t:"流量主广告",f:2},
+ {n:"CPA拉新",i:"📣",v:36.53,c:"biz",t:"推广佣金",f:1},
+ {n:"闲鱼",i:"🐟",v:31.27,c:"biz",t:"无货源卖货",f:1},
+ {n:"快手极速版",i:"🎬",v:19.73,c:"auto",t:"看视频赚金币",f:1},
+ {n:"喜番免费短剧",i:"📺",v:11.45,c:"auto",t:"看剧赚金币",f:1},
+ {n:"小红书壁纸",i:"📕",v:11.36,c:"content",t:"卖壁纸/素材",f:1},
+ {n:"红果免费短剧",i:"🍿",v:6.98,c:"auto",t:"看剧赚金币",f:1},
+ {n:"抖音极速版",i:"⚡",v:6.82,c:"auto",t:"看视频赚金币",f:1},
+ {n:"趣头条",i:"📰",v:2.39,c:"auto",t:"看资讯赚金币",f:1},
+ {n:"快手",i:"🎬",v:2.18,c:"auto",t:"看视频赚金币",f:1},
+ {n:"番茄畅听",i:"🎧",v:2.04,c:"auto",t:"听书赚金币",f:1},
+ {n:"今日头条极速版",i:"📰",v:2.04,c:"auto",t:"看资讯赚金币",f:1},
+ {n:"抖音",i:"🎵",v:1.74,c:"auto",t:"看视频赚金币",f:1},
+ {n:"番茄免费小说",i:"📚",v:1.36,c:"auto",t:"看小说赚金币",f:1},
+ {n:"番茄音乐",i:"🎼",v:1.27,c:"auto",t:"听歌赚金币",f:1},
+ {n:"今日头条",i:"📰",v:1.02,c:"auto",t:"看资讯赚金币",f:1},
+ {n:"悟空浏览器",i:"🌏",v:0.91,c:"auto",t:"刷内容赚金币",f:1},
+ {n:"西瓜视频",i:"🍉",v:0.85,c:"auto",t:"看视频赚金币",f:1},
+ {n:"蛋花免费小说",i:"📖",v:0.79,c:"auto",t:"看小说赚金币",f:1},
+ {n:"红果免费漫剧",i:"🎞️",v:0.67,c:"auto",t:"看漫剧赚金币",f:1},
+ {n:"抖音火山版",i:"🌋",v:0.51,c:"auto",t:"看视频赚金币",f:1},
+];
+const FMT={1:["ok","✅ 可跑通"],2:["warn","⚠️ 有门槛"]};
+const CAT={auto:"挂机看赚",content:"内容创作",biz:"电商拉新"};
+const rows=document.getElementById("rows");
+function render(f){
+  const list=APPS.filter(a=>f==="all"||a.c===f);
+  const max=APPS[0].v;
+  rows.innerHTML=list.map((a,idx)=>{
+    const [cls,txt]=FMT[a.f];
+    const pct=(a.v/max*100).toFixed(1);
+    return `<tr>
+      <td class="rk">${String(idx+1).padStart(2,"0")}</td>
+      <td><div class="tname"><span class="ticon">${a.i}</span><div>${a.n}<div class="tcat">${CAT[a.c]} · ${a.t}</div></div></div></td>
+      <td class="inc">¥${a.v.toFixed(2)}</td>
+      <td><div style="display:flex;align-items:center;gap:8px"><div class="bar"><i style="width:${pct}%"></i></div><span class="tcat">${pct}%</span></div></td>
+      <td><span class="tcat">${a.t}</span></td>
+      <td><span class="chip ${cls}">${txt}</span></td>
+    </tr>`;
+  }).join("");
+}
+render("all");
+document.getElementById("tabs").addEventListener("click",e=>{
+  const b=e.target.closest(".tab"); if(!b) return;
+  document.querySelectorAll(".tab").forEach(t=>t.classList.remove("on"));
+  b.classList.add("on"); render(b.dataset.f);
+});
+
+/* ---- counters ---- */
+const io=new IntersectionObserver(es=>es.forEach(en=>{
+  if(!en.isIntersecting) return;
+  const el=en.target, end=parseFloat(el.dataset.count), dec=+(el.dataset.dec||0);
+  const pre=el.dataset.prefix||"", suf=el.dataset.suffix||"";
+  const t0=performance.now(), dur=1400;
+  (function tick(now){
+    const p=Math.min((now-t0)/dur,1), e=1-Math.pow(1-p,3);
+    el.textContent=pre+(end*e).toLocaleString("zh-CN",{minimumFractionDigits:dec,maximumFractionDigits:dec})+suf;
+    if(p<1) requestAnimationFrame(tick);
+  })(t0);
+  io.unobserve(el);
+},{threshold:.6});
+document.querySelectorAll("[data-count]").forEach(el=>io.observe(el));
+
+/* ---- faq ---- */
+document.querySelectorAll(".q button").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    const q=btn.parentElement, a=q.querySelector(".a"), open=q.classList.contains("open");
+    document.querySelectorAll(".q.open").forEach(o=>{o.classList.remove("open");o.querySelector(".a").style.maxHeight=0});
+    if(!open){q.classList.add("open");a.style.maxHeight=a.scrollHeight+"px"}
+  });
+});
+
+/* ---- progress & top btn ---- */
+const prog=document.getElementById("progress"), topBtn=document.getElementById("top-btn");
+addEventListener("scroll",()=>{
+  const h=document.documentElement;
+  prog.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+"%";
+  topBtn.classList.toggle("show",h.scrollTop>600);
+},{passive:true});
+topBtn.addEventListener("click",()=>scrollTo({top:0,behavior:"smooth"}));
+</script>
+</body>
+</html>
